@@ -1,0 +1,21 @@
+x=20;
+if x>6:                     #if判断中，if,elif,else后面判断都不用加括号，但是后面要加冒号 
+ print("x>6");              
+ print("测试缩进规则")      #不同于C++，只要在一个if下,不要用大括号括起来，只要遵循缩进规则就行
+elif x>0:
+ print("x>0 && x<=6")
+else:
+ print("x<0");
+ 
+ 
+x=[];
+if x:                        #只要x是非零数值、非空字符串、非空list等，就判断为True，否则为False
+ print("非空集合");
+else :
+ print("空集合");
+ 
+x=input("输入整数:");
+if int(x)>=0:              #input输入的默认都是字符串型，这里进行整数的判断，要用int()行数进行类型转化
+ print("非负数");
+else:
+ print("负数");
